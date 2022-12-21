@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import style from "./App.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -64,7 +65,9 @@ function App() {
           disabled
         />
       </div>
-      <button onClick={reset}>Reset</button>
+      <button onClick={reset} className="btn">
+        Reset
+      </button>
     </>
   );
 }
